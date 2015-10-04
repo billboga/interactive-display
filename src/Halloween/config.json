@@ -1,1 +1,9 @@
-{}
+{
+    "appSettings": {
+        "displays": {
+            "TextGlitchDisplay": {
+                "text": "Halloween"
+            }
+        }
+    }
+}
