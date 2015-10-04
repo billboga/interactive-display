@@ -1,6 +1,6 @@
 ﻿namespace Halloween.ViewModels.Displays
 {
-    public class TextGlitchDisplay : IDisplay
+    public class TextGlitchDisplay : BaseDisplay
     {
         public string Text { get; set; }
     }

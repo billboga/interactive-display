@@ -10,7 +10,7 @@
 
 @section scripts {
 <script>
-    var text = "@Model.Text";
+    var model = $.parseJSON('@Model.ToJson()');
 </script>
 <script src="~/js/displays/text-glitch-display.js"></script>
 }
