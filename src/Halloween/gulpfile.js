@@ -1,13 +1,15 @@
-﻿/// <binding Clean='clean' />
+﻿/// <binding AfterBuild='sass' Clean='clean' />
 
 var gulp = require("gulp"),
     rimraf = require("rimraf"),
     concat = require("gulp-concat"),
     cssmin = require("gulp-cssmin"),
+    sass = require("gulp-sass"),
     uglify = require("gulp-uglify"),
     project = require("./project.json");
 
 var paths = {
+    approot: "./",
     webroot: "./" + project.webroot + "/"
 };
 
@@ -43,3 +45,9 @@ gulp.task("min:css", function () {
 });
 
 gulp.task("min", ["min:js", "min:css"]);
+
+gulp.task("sass", function() {
+    gulp.src(paths.approot + "Assets/Styles/**/*.scss")
+        .pipe(sass.sync().on("error", sass.logError))
+        .pipe(gulp.dest(paths.webroot + "css/"));
+});
