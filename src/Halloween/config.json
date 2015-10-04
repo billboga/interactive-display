@@ -1,8 +1,11 @@
 {
     "appSettings": {
+        "displayHeight": "",
+        "displayWidth": "",
         "displays": {
             "TextGlitchDisplay": {
-                "text": "Halloween"
+                "text": "Halloween",
+                "audioSource": ""
             }
         }
     }

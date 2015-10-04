@@ -1,10 +1,13 @@
 ﻿using Halloween.Models;
+using Halloween.ViewModels.Displays;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.Dnx.Runtime;
 using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Halloween
@@ -16,6 +19,7 @@ namespace Halloween
             // Setup configuration sources.
             var builder = new ConfigurationBuilder(appEnv.ApplicationBasePath)
                 .AddJsonFile("config.json")
+                .AddJsonFile($"config.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }

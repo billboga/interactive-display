@@ -12,6 +12,8 @@ namespace Halloween.ViewModels.Displays
             ContractResolver = new CamelCasePropertyNamesContractResolver()
         };
 
+        public string AudioSource { get; set; }
+
         public IHtmlContent ToJson()
         {
             return new HtmlString(JsonConvert.SerializeObject(this, jsonSerializerSettings));

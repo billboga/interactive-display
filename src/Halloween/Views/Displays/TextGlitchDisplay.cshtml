@@ -5,9 +5,13 @@
 }
 
 <div id="wrapper">
+    <canvas id="filler"></canvas>
     <canvas id="stage"></canvas>
 </div>
-
+@if (!string.IsNullOrEmpty(Model.AudioSource))
+{
+    <audio src="@Model.AudioSource" autoplay></audio>
+}
 @section scripts {
 <script>
     var model = $.parseJSON('@Model.ToJson()');
