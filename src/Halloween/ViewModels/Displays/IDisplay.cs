@@ -1,4 +1,4 @@
-﻿namespace Halloween.Models.Displays
+﻿namespace Halloween.ViewModels.Displays
 {
     public interface IDisplay
     {

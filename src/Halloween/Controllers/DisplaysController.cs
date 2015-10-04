@@ -1,6 +1,6 @@
 ﻿using Halloween.Extensions;
 using Halloween.Models;
-using Halloween.Models.Displays;
+using Halloween.ViewModels.Displays;
 using Microsoft.AspNet.Mvc;
 using Microsoft.Framework.OptionsModel;
 using System.Linq;
