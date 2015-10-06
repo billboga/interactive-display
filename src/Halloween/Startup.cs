@@ -1,14 +1,10 @@
 ﻿using Halloween.Models;
-using Halloween.ViewModels.Displays;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.Dnx.Runtime;
 using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Halloween
 {
@@ -33,6 +29,14 @@ namespace Halloween
 
             // Add MVC services to the services container.
             services.AddMvc();
+
+            //Add all SignalR related services to IoC.
+            services.AddSignalR();
+
+            services.AddSingleton<IPinProvider>(x =>
+            {
+                return new DebugPinProvider();
+            });
 
             // Uncomment the following line to add Web API services which makes it easier to port Web API 2 controllers.
             // You will also need to add the Microsoft.AspNet.Mvc.WebApiCompatShim package to the 'dependencies' section of project.json.
@@ -59,6 +63,8 @@ namespace Halloween
                 // send the request to the following path or controller action.
                 app.UseErrorHandler("/Home/Error");
             }
+
+            app.UseSignalR();
 
             // Add static files to the request pipeline.
             app.UseStaticFiles();
