@@ -26,7 +26,35 @@
             top:0;
             width: @displayWidth;
         }
+
+        iframe.portrait {
+            height: 100vw;
+            left: 0px;
+            position: relative;
+            top: 50%;
+            transform: rotate(-90deg) translateX(-50vh) translateY(-50vh);
+            transform-origin: top;
+            width: 100vh;
+        }
     </style>
 }
 
-<iframe src="/displays"></iframe>
+<iframe id="display" class="@(AppSettings.Options.PortraitMode == true ? "portrait" : "")" data-src="/displays"></iframe>
+
+@section scripts {
+    <script>
+        $(function() {
+            var display = $('#display');
+
+            pinHub.client.inputPinStateChange = function(index, state) {
+                if (index === 0 && state === true) {
+                    display.attr('src', null);
+                    display.attr('src', display.data('src'));
+                }
+                else if (index === 0 && state === false) {
+                    display.attr('src', null);
+                }
+            };
+        });
+    </script>
+}

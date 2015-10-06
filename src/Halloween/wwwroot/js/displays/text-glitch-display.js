@@ -19,7 +19,7 @@
             this.width = document.documentElement.offsetWidth;
             this.height = document.documentElement.offsetHeight;
 
-            this.textSize = Math.floor(this.width / 7);
+            this.textSize = Math.floor(this.width / model.text.length);
             // sets text size based on window size
             if (this.textSize > this.height) {
                 this.textSize = Math.floor(this.height / 1.5);
@@ -136,7 +136,7 @@
                 //document.documentElement.offsetHeight;
                 this.canvas.width = this.width;
                 //document.documentElement.offsetWidth;
-                this.textSize = Math.floor(this.canvas.width / 7);
+                this.textSize = Math.floor(this.canvas.width / model.text.length);
                 // RE-sets text size based on window size
                 if (this.textSize > this.height) {
                     this.textSize = Math.floor(this.canvas.height / 1.5);

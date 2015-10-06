@@ -9,6 +9,21 @@
     <body>
         @RenderBody()
         <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/jquery.signalr/jquery.signalr.js"></script>
+        <script src="~/signalr/hubs" type="text/javascript"></script>
+        <script>
+            var pinHub = null;
+
+            $(function() {
+                $.connection.hub.logging = true;
+
+                pinHub = $.connection.pinHub;
+
+                $.connection.hub.start().done(function() {
+                    console.log('hub connection open');
+                });
+            });
+        </script>
         @RenderSection("scripts", required: false)
     </body>
 </html>
