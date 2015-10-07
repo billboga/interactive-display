@@ -10,15 +10,16 @@ namespace Halloween.Models
         {
             inputPins = new List<PinConfiguration>()
             {
-                ConnectorPin.P1Pin11.Input().PullDown()
+                ConnectorPin.P1Pin16.Input().PullDown(),
+                ConnectorPin.P1Pin16.Input().PullDown()
             };
 
             outputPins = new List<PinConfiguration>()
             {
+                ConnectorPin.P1Pin11.Output(),
                 ConnectorPin.P1Pin12.Output(),
                 ConnectorPin.P1Pin13.Output(),
-                ConnectorPin.P1Pin15.Output(),
-                ConnectorPin.P1Pin16.Output()
+                ConnectorPin.P1Pin15.Output()
             };
 
             connection = new GpioConnection();
