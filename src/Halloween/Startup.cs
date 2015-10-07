@@ -35,7 +35,16 @@ namespace Halloween
 
             services.AddSingleton<IPinProvider>(x =>
             {
-                return new DebugPinProvider();
+                var env = x.GetService<IHostingEnvironment>();
+
+                if (env.IsDevelopment())
+                {
+                    return new DebugPinProvider();
+                }
+                else
+                {
+                    return new RaspberryPiPinProvider();
+                }
             });
 
             // Uncomment the following line to add Web API services which makes it easier to port Web API 2 controllers.
