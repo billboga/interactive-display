@@ -1,5 +1,5 @@
 # Project-specific
-**/wwwroot/css/displays/
+# **/wwwroot/css/displays/
 **/wwwroot/audio/
 config.development.json
 
