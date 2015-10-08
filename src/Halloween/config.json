@@ -6,6 +6,10 @@
             "TextGlitchDisplay": {
                 "text": "Halloween",
                 "audioSource": ""
+            },
+            "TextWarpDisplay": {
+                "text": "Halloween",
+                "audioSource": ""
             }
         },
         "portraitMode": "false"

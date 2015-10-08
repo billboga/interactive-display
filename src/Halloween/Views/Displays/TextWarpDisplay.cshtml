@@ -1,0 +1,21 @@
+﻿@model Halloween.ViewModels.Displays.TextWarpDisplay
+
+@section styles {
+    <link href="~/css/displays/text-warp-display.css" rel="stylesheet" type="text/css" />
+}
+
+<div class='main'>
+    <div class='head'>
+        <h1>@Model.Text</h1>
+    </div>
+</div>
+@if (!string.IsNullOrEmpty(Model.AudioSource))
+{
+    <audio src="@Model.AudioSource" autoplay></audio>
+}
+@section scripts {
+    <script>
+    var model = $.parseJSON('@Model.ToJson()');
+    </script>
+    <script src="~/js/displays/text-warp-display.js"></script>
+}

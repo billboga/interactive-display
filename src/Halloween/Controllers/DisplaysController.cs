@@ -24,11 +24,11 @@ namespace Halloween.Controllers
 
         public IActionResult Index()
         {
-            var modelDictionary = appSettings.Displays.FirstOrDefault(x => x.Key == "TextGlitchDisplay").Value;
+            var modelDictionary = appSettings.Displays.FirstOrDefault(x => x.Key == "TextWarpDisplay").Value;
 
-            var model = modelDictionary.ToObject(typeof(TextGlitchDisplay)) as IDisplay;
+            var model = modelDictionary.ToObject(typeof(TextWarpDisplay)) as IDisplay;
 
-            return View("TextGlitchDisplay", model);
+            return View("TextWarpDisplay", model);
         }
 
         public IActionResult TestInput()
