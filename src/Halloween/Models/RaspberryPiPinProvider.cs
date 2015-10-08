@@ -11,7 +11,7 @@ namespace Halloween.Models
             inputPins = new List<PinConfiguration>()
             {
                 ConnectorPin.P1Pin16.Input().PullDown(),
-                ConnectorPin.P1Pin16.Input().PullDown()
+                ConnectorPin.P1Pin18.Input().PullDown()
             };
 
             outputPins = new List<PinConfiguration>()
