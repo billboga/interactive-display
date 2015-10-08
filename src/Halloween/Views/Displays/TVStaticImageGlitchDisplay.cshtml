@@ -1,0 +1,26 @@
+﻿@model Halloween.ViewModels.Displays.TVStaticImageGlitchDisplay
+
+@section styles {
+    <style>
+        body {
+            background: url(@Model.ImageGlitchUri) 50%/cover;
+        }
+    </style>
+    <link href="~/css/displays/tv-static-image-glitch-display.css" rel="stylesheet" type="text/css" />
+}
+
+<canvas id="cvs" style="width:100%;height:100%;background:rgba(30,30,30,20);position:absolute;top:0;left:0"></canvas>
+@if (!string.IsNullOrEmpty(Model.AudioSource))
+{
+    <audio src="@Model.AudioSource" autoplay></audio>
+}
+@if (!string.IsNullOrEmpty(Model.ImageAudioSource))
+{
+    <audio id="image-audio-source" src="@Model.ImageAudioSource"></audio>
+}
+@section scripts {
+    <script>
+    var model = $.parseJSON('@Model.ToJson()');
+    </script>
+    <script src="~/js/displays/tv-static-image-glitch-display.js"></script>
+}

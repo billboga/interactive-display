@@ -24,16 +24,16 @@ namespace Halloween.Controllers
 
         public IActionResult Index()
         {
-            var modelDictionary = appSettings.Displays.FirstOrDefault(x => x.Key == "TextWarpDisplay").Value;
+            var modelDictionary = appSettings.Displays.FirstOrDefault(x => x.Key == "TVStaticImageGlitchDisplay").Value;
 
-            var model = modelDictionary.ToObject(typeof(TextWarpDisplay)) as IDisplay;
+            var model = modelDictionary.ToObject(typeof(TVStaticImageGlitchDisplay)) as IDisplay;
 
-            return View("TextWarpDisplay", model);
+            return View("TVStaticImageGlitchDisplay", model);
         }
 
-        public IActionResult TestInput()
+        public IActionResult TestInput(int pinIndex, bool pinState)
         {
-            pinHub.Clients.All.inputPinStateChange(0, true);
+            pinHub.Clients.All.inputPinStateChange(pinIndex, pinState);
 
             return Ok();
         }
