@@ -46,17 +46,23 @@ document.body.addEventListener('keydown', doSwitch);
 $(function() {
     var tvStatic = $('#cvs');
     var imageAudioSource = $('#image-audio-source');
+    var strobeTimeout = null;
 
     pinHub.client.inputPinStateChange = function(index, state) {
         if (index === 1 && state === true) {
             if (imageAudioSource.length > 0) {
                 imageAudioSource[0].play();
                 setTimeout(function() {
+                    clearTimeout(strobeTimeout);
+                    pinHub.server.setOutputPinState(0, false);
+
                     tvStatic.show();
                 }, imageAudioSource[0].seekable.end(0) * 1000);
             }
 
             tvStatic.hide();
+
+            strobe(100, true);
         }
         else if (index === 1 && state === false) {
             if (imageAudioSource.length > 0) {
@@ -67,4 +73,12 @@ $(function() {
             tvStatic.show();
         }
     };
+
+    function strobe(interval, initialPinState) {
+        pinHub.server.setOutputPinState(0, initialPinState);
+
+        strobeTimeout = setTimeout(function() {
+            strobe(interval, !initialPinState);
+        }, interval);
+    }
 });
