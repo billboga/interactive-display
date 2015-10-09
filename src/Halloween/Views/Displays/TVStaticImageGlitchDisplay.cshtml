@@ -1,22 +1,29 @@
-﻿@model Halloween.ViewModels.Displays.TVStaticImageGlitchDisplay
+﻿@using Halloween.Extensions
+@model Halloween.ViewModels.Displays.TVStaticImageGlitchDisplay
+
+@{
+    var audioSource = Model.AudioSource.Split(',').GetRandomElement();
+    var imageAudioSource = Model.ImageAudioSource.Split(',').GetRandomElement();
+    var imageGlitchUri = Model.ImageGlitchUri.Split(',').GetRandomElement();
+}
 
 @section styles {
     <style>
         body {
-            background: url(@Model.ImageGlitchUri) 50%/cover;
+            background: url(@imageGlitchUri) 50%/cover;
         }
     </style>
     <link href="~/css/displays/tv-static-image-glitch-display.css" rel="stylesheet" type="text/css" />
 }
 
 <canvas id="cvs" style="width:100%;height:100%;background:rgba(30,30,30,20);position:absolute;top:0;left:0"></canvas>
-@if (!string.IsNullOrEmpty(Model.AudioSource))
+@if (!string.IsNullOrEmpty(audioSource))
 {
-    <audio src="@Model.AudioSource" autoplay></audio>
+    <audio src="@audioSource" autoplay></audio>
 }
-@if (!string.IsNullOrEmpty(Model.ImageAudioSource))
+@if (!string.IsNullOrEmpty(imageAudioSource))
 {
-    <audio id="image-audio-source" src="@Model.ImageAudioSource"></audio>
+    <audio id="image-audio-source" src="@imageAudioSource"></audio>
 }
 @section scripts {
     <script>
