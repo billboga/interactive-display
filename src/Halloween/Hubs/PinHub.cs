@@ -9,7 +9,7 @@ namespace Halloween.Hubs
         {
             this.pinProvider = pinProvider;
 
-            pinProvider.InputPinStateChange += (index, state) =>
+            pinProvider.InputPinStateChange = (index, state) =>
             {
                 InputPinStateChange(index, state);
             };
