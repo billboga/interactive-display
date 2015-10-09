@@ -43,7 +43,7 @@ $(function() {
         pinHub.server.setOutputPinState(1, !initialPinState);
 
         strobeTimeout = setTimeout(function() {
-            strobe(Math.floor(Math.random() * 1000), !initialPinState);
+            strobe(Math.floor(Math.random() * 500), !initialPinState);
         }, interval);
     }
 });
