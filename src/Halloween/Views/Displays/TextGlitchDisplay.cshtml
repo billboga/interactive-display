@@ -1,4 +1,9 @@
-﻿@model Halloween.ViewModels.Displays.TextGlitchDisplay
+﻿@using Halloween.Extensions
+@model Halloween.ViewModels.Displays.TextGlitchDisplay
+
+@{
+    var audioSource = Model.AudioSource.Split(',').GetRandomElement();
+}
 
 @section styles {
 <link href="~/css/displays/text-glitch-display.css" rel="stylesheet" type="text/css" />
@@ -8,9 +13,9 @@
     <canvas id="filler"></canvas>
     <canvas id="stage"></canvas>
 </div>
-@if (!string.IsNullOrEmpty(Model.AudioSource))
+@if (!string.IsNullOrEmpty(audioSource))
 {
-    <audio src="@Model.AudioSource" autoplay></audio>
+    <audio src="@audioSource" autoplay></audio>
 }
 @section scripts {
 <script>
