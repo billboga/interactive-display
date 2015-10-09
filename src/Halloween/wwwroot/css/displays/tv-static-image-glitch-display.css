@@ -13,283 +13,295 @@ body.animate {
   animation: spazz 7s steps(1) infinite; }
 
 @keyframes spazz {
-  0% {
-    -webkit-filter:  hue-rotate(259.2deg);
-    background-color: #66ff82;
-    transform: translate(15px, 15px) scale(1.17); }
+  1% {
+    -webkit-filter:  saturate(3.43) hue-rotate(50.4deg);
+    background-color: #668cff;
+    transform: translate(3px, -12px) scale(1.17); }
   2% {
-    -webkit-filter:  hue-rotate(108deg);
-    background-color: #bd66ff;
-    transform: translate(9px, -14px) scale(1.1); }
+    -webkit-filter:  saturate(4.33) hue-rotate(118.8deg);
+    background-color: #fff266;
+    transform: translate(4px, -4px) scale(1.22); }
   3% {
-    -webkit-filter:  hue-rotate(190.8deg);
-    background-color: #ff66b5;
-    transform: translate(4px, -3px) scale(1.19); }
-  4% {
-    -webkit-filter:  hue-rotate(169.2deg);
-    background-color: #66f2ff;
-    transform: translate(-8px, -1px) scale(1.2); }
+    -webkit-filter:  hue-rotate(172.8deg);
+    background-color: #ff6966;
+    transform: translate(-14px, 0px) scale(1.18); }
   6% {
-    -webkit-filter:  hue-rotate(154.8deg);
-    background-color: #66b0ff;
-    transform: translate(-3px, 7px) scale(1.08); }
+    -webkit-filter:  hue-rotate(252deg);
+    background-color: #66ffdb;
+    transform: translate(0px, -12px) scale(1.23); }
   7% {
-    -webkit-filter:  saturate(1.9) hue-rotate(21.6deg);
-    background-color: #66ff82;
-    transform: translate(-6px, -5px) scale(1.2); }
+    -webkit-filter:  hue-rotate(82.8deg) brightness(65.5%);
+    background-color: #66f0ff;
+    transform: translate(-10px, 3px) scale(1.24); }
+  8% {
+    -webkit-filter:  hue-rotate(284.4deg) contrast(1.99);
+    background-color: #669cff;
+    transform: translate(15px, 0px) scale(1.1); }
   9% {
-    -webkit-filter:  hue-rotate(259.2deg) contrast(4.33);
-    background-color: #66ffe3;
-    transform: translate(3px, -6px) scale(1.06); }
+    -webkit-filter:  hue-rotate(147.6deg);
+    background-color: #ffb066;
+    transform: translate(9px, -13px) scale(1.11); }
   10% {
-    -webkit-filter:  hue-rotate(140.4deg);
-    background-color: #f566ff;
-    transform: translate(4px, 10px) scale(1.24); }
-  11% {
-    -webkit-filter:  hue-rotate(118.8deg);
-    background-color: #66e5ff;
-    transform: translate(-5px, 14px) scale(1.18); }
-  12% {
-    -webkit-filter:  hue-rotate(165.6deg);
-    background-color: #66ff8f;
-    transform: translate(-8px, 12px) scale(1.19); }
+    -webkit-filter:  hue-rotate(180deg);
+    background-color: #78ff66;
+    transform: translate(7px, -9px) scale(1.23); }
   13% {
-    -webkit-filter:  hue-rotate(118.8deg) contrast(7.48);
-    background-color: #a3ff66;
-    transform: translate(-6px, 14px) scale(1.09); }
+    -webkit-filter:  saturate(2.98) hue-rotate(223.2deg);
+    background-color: #66ff66;
+    transform: translate(13px, -4px) scale(1.17); }
   14% {
-    -webkit-filter:  saturate(3.52) hue-rotate(288deg);
-    background-color: #66ffa8;
-    transform: translate(12px, -6px) scale(1.2); }
-  15% {
-    -webkit-filter:  saturate(9.37) hue-rotate(158.4deg);
-    background-color: #66fff0;
-    transform: translate(3px, 9px) scale(1.14); }
+    -webkit-filter:  saturate(6.94) hue-rotate(14.4deg);
+    background-color: #66ff78;
+    transform: translate(-7px, 15px) scale(1.23); }
   17% {
-    -webkit-filter:  hue-rotate(187.2deg) contrast(4.6);
-    background-color: #66ff70;
-    transform: translate(-2px, 11px) scale(1.15); }
-  18% {
-    -webkit-filter:  hue-rotate(349.2deg);
-    background-color: #ffbd66;
-    transform: translate(8px, -11px) scale(1.08); }
-  20% {
-    -webkit-filter:  hue-rotate(162deg);
-    background-color: #66bfff;
-    transform: translate(8px, 9px) scale(1.13); }
-  21% {
-    -webkit-filter:  hue-rotate(244.8deg);
-    background-color: #66ff96;
-    transform: translate(2px, -7px) scale(1.11); }
-  23% {
-    -webkit-filter:  hue-rotate(57.6deg);
-    background-color: #9c66ff;
-    transform: translate(-13px, 6px) scale(1.24); }
-  24% {
-    -webkit-filter:  saturate(2.62) hue-rotate(140.4deg);
-    background-color: #6966ff;
-    transform: translate(-9px, 9px) scale(1.16); }
-  25% {
-    -webkit-filter:  hue-rotate(133.2deg);
-    background-color: #66ffe5;
-    transform: translate(-14px, 8px) scale(1.22); }
-  26% {
-    -webkit-filter:  hue-rotate(154.8deg);
-    background-color: #66ff75;
-    transform: translate(3px, 7px) scale(1.14); }
-  27% {
-    -webkit-filter:  hue-rotate(136.8deg);
-    background-color: #ff66fa;
-    transform: translate(6px, -11px) scale(1.16); }
-  28% {
-    -webkit-filter:  hue-rotate(298.8deg);
-    background-color: #6680ff;
-    transform: translate(4px, -10px) scale(1.22); }
-  30% {
-    -webkit-filter:  saturate(7.21);
-    background-color: #66ffc7;
-    transform: translate(6px, 7px) scale(1.08); }
-  31% {
     -webkit-filter:  hue-rotate(273.6deg);
-    background-color: #66ffa3;
-    transform: translate(-14px, -11px) scale(1.17); }
+    background-color: #66baff;
+    transform: translate(-12px, -1px) scale(1.23); }
+  18% {
+    -webkit-filter:  hue-rotate(172.8deg);
+    background-color: #ff6680;
+    transform: translate(4px, 0px) scale(1.16); }
+  19% {
+    -webkit-filter:  hue-rotate(316.8deg);
+    background-color: #ff66e8;
+    transform: translate(-2px, 8px) scale(1.19); }
+  20% {
+    -webkit-filter:  hue-rotate(212.4deg);
+    background-color: #7866ff;
+    transform: translate(1px, -1px) scale(1.07); }
+  21% {
+    -webkit-filter:  saturate(9.1) hue-rotate(309.6deg);
+    background-color: #6694ff;
+    transform: translate(-11px, -1px) scale(1.18); }
+  23% {
+    -webkit-filter:  hue-rotate(129.6deg);
+    background-color: #66fffc;
+    transform: translate(0px, -7px) scale(1.17); }
+  24% {
+    -webkit-filter:  hue-rotate(288deg);
+    background-color: #ed66ff;
+    transform: translate(11px, 10px) scale(1.17); }
+  25% {
+    -webkit-filter:  hue-rotate(111.6deg);
+    background-color: #66c7ff;
+    transform: translate(2px, 15px) scale(1.25); }
+  26% {
+    -webkit-filter:  saturate(4.51) hue-rotate(126deg);
+    background-color: #7366ff;
+    transform: translate(13px, 5px) scale(1.11); }
+  27% {
+    -webkit-filter:  hue-rotate(241.2deg);
+    background-color: #8766ff;
+    transform: translate(13px, -1px) scale(1.2); }
+  29% {
+    -webkit-filter:  hue-rotate(208.8deg);
+    background-color: #ffab66;
+    transform: translate(8px, 1px) scale(1.14); }
+  30% {
+    -webkit-filter:  hue-rotate(122.4deg);
+    background-color: #f266ff;
+    transform: translate(11px, 11px) scale(1.06); }
   32% {
-    -webkit-filter:  hue-rotate(219.6deg);
-    background-color: #66ebff;
-    transform: translate(6px, 10px) scale(1.15); }
+    -webkit-filter:  hue-rotate(79.2deg) invert(1);
+    background-color: #6666ff;
+    transform: translate(-10px, 1px) scale(1.13); }
   34% {
-    -webkit-filter:  hue-rotate(10.8deg);
-    background-color: #baff66;
-    transform: translate(-8px, -8px) scale(1.18); }
-  35% {
-    -webkit-filter:  hue-rotate(68.4deg) brightness(60.5%);
-    background-color: #a8ff66;
-    transform: translate(13px, -11px) scale(1.1); }
+    -webkit-filter:  hue-rotate(115.2deg);
+    background-color: #66ff70;
+    transform: translate(-13px, 15px) scale(1.09); }
   36% {
-    -webkit-filter:  hue-rotate(32.4deg);
-    background-color: #ffc266;
-    transform: translate(3px, -3px) scale(1.12); }
-  37% {
-    -webkit-filter:  saturate(6.76) hue-rotate(342deg);
-    background-color: #ff66ad;
-    transform: translate(-12px, -10px) scale(1.13); }
-  39% {
-    -webkit-filter:  hue-rotate(165.6deg);
-    background-color: #70ff66;
-    transform: translate(8px, -4px) scale(1.18); }
-  40% {
-    -webkit-filter:  hue-rotate(50.4deg);
-    background-color: #6e66ff;
-    transform: translate(5px, 1px) scale(1.14); }
-  41% {
-    -webkit-filter:  hue-rotate(180deg) invert(1);
-    background-color: #ffc266;
-    transform: translate(3px, 15px) scale(1.06); }
-  42% {
-    -webkit-filter:  hue-rotate(43.2deg);
-    background-color: #de66ff;
-    transform: translate(-2px, 12px) scale(1.24); }
-  43% {
-    -webkit-filter:  hue-rotate(126deg);
+    -webkit-filter:  hue-rotate(151.2deg);
     background-color: #6b66ff;
-    transform: translate(-3px, 7px) scale(1.13); }
-  44% {
-    -webkit-filter:  hue-rotate(266.4deg);
-    background-color: #66c2ff;
-    transform: translate(-7px, -6px) scale(1.15); }
-  45% {
+    transform: translate(-3px, 0px) scale(1.24); }
+  39% {
+    -webkit-filter:  hue-rotate(108deg);
+    background-color: #80ff66;
+    transform: translate(-10px, 7px) scale(1.09); }
+  41% {
+    -webkit-filter:  hue-rotate(3.6deg);
+    background-color: #f5ff66;
+    transform: translate(-3px, -9px) scale(1.16); }
+  42% {
     -webkit-filter:  hue-rotate(64.8deg);
-    background-color: #ffba66;
-    transform: translate(2px, -9px) scale(1.19); }
+    background-color: #db66ff;
+    transform: translate(3px, -9px) scale(1.14); }
+  43% {
+    -webkit-filter:  hue-rotate(32.4deg);
+    background-color: #66fff5;
+    transform: translate(15px, -10px) scale(1.07); }
+  44% {
+    -webkit-filter:  hue-rotate(331.2deg);
+    background-color: #667aff;
+    transform: translate(-14px, 3px) scale(1.19); }
+  46% {
+    -webkit-filter:  saturate(6.58) hue-rotate(93.6deg);
+    background-color: #66d1ff;
+    transform: translate(6px, 14px) scale(1.16); }
+  47% {
+    -webkit-filter:  hue-rotate(320.4deg) contrast(7.84) brightness(47.5%);
+    background-color: #d166ff;
+    transform: translate(-6px, -8px) scale(1.16); }
   48% {
-    -webkit-filter:  hue-rotate(216deg);
-    background-color: #ff66a8;
-    transform: translate(-1px, 8px) scale(1.08); }
+    -webkit-filter:  hue-rotate(356.4deg);
+    background-color: #6bff66;
+    transform: translate(12px, 14px) scale(1.21); }
   49% {
-    -webkit-filter:  hue-rotate(10.8deg);
-    background-color: #6687ff;
-    transform: translate(12px, -9px) scale(1.07); }
+    -webkit-filter:  hue-rotate(205.2deg) contrast(1.54);
+    background-color: #80ff66;
+    transform: translate(5px, 14px) scale(1.2); }
   50% {
-    -webkit-filter:  hue-rotate(28.8deg);
-    background-color: #ff66de;
-    transform: translate(-9px, 3px) scale(1.17); }
+    -webkit-filter:  hue-rotate(147.6deg);
+    background-color: #668fff;
+    transform: translate(-14px, -8px) scale(1.17); }
+  51% {
+    -webkit-filter:  saturate(3.97) hue-rotate(46.8deg);
+    background-color: #fc66ff;
+    transform: translate(8px, 3px) scale(1.07); }
   53% {
     -webkit-filter:  hue-rotate(216deg);
-    background-color: #6691ff;
-    transform: translate(7px, -12px) scale(1.08); }
+    background-color: #ad66ff;
+    transform: translate(-8px, 10px) scale(1.24); }
   54% {
-    -webkit-filter:  hue-rotate(356.4deg);
-    background-color: #66ffde;
-    transform: translate(1px, -6px) scale(1.09); }
+    -webkit-filter:  hue-rotate(194.4deg);
+    background-color: #66ffcf;
+    transform: translate(2px, -11px) scale(1.15); }
+  55% {
+    -webkit-filter:  hue-rotate(18deg) brightness(72%);
+    background-color: #ffde66;
+    transform: translate(15px, 3px) scale(1.22); }
   57% {
-    -webkit-filter:  hue-rotate(288deg);
-    background-color: #de66ff;
-    transform: translate(11px, -12px) scale(1.17); }
-  62% {
-    -webkit-filter:  hue-rotate(169.2deg);
-    background-color: #70ff66;
-    transform: translate(-6px, -9px) scale(1.06); }
-  63% {
-    -webkit-filter:  hue-rotate(223.2deg);
-    background-color: #f0ff66;
-    transform: translate(0px, 14px) scale(1.11); }
-  65% {
-    -webkit-filter:  hue-rotate(226.8deg) contrast(3.88);
-    background-color: #6699ff;
-    transform: translate(-7px, 12px) scale(1.14); }
-  66% {
-    -webkit-filter:  hue-rotate(216deg);
-    background-color: #ff7f66;
-    transform: translate(-7px, -7px) scale(1.19); }
-  68% {
-    -webkit-filter:  hue-rotate(201.6deg) invert(1);
-    background-color: #bdff66;
-    transform: translate(7px, 12px) scale(1.17); }
-  69% {
-    -webkit-filter:  hue-rotate(158.4deg) contrast(6.76);
-    background-color: #66ffcc;
-    transform: translate(-12px, 7px) scale(1.16); }
-  71% {
-    -webkit-filter:  hue-rotate(345.6deg);
-    background-color: #66ff96;
-    transform: translate(-6px, 3px) scale(1.18); }
-  73% {
-    -webkit-filter:  hue-rotate(345.6deg);
-    background-color: #66ffd4;
-    transform: translate(8px, -3px) scale(1.19); }
-  74% {
-    -webkit-filter:  saturate(2.71) hue-rotate(136.8deg);
-    background-color: #66ffb8;
-    transform: translate(15px, -2px) scale(1.09); }
-  75% {
-    -webkit-filter:  hue-rotate(259.2deg);
-    background-color: #ba66ff;
-    transform: translate(-10px, 8px) scale(1.07); }
-  77% {
-    -webkit-filter:  hue-rotate(57.6deg);
-    background-color: #ff66a3;
-    transform: translate(-11px, 6px) scale(1.11); }
-  78% {
-    -webkit-filter:  hue-rotate(50.4deg) invert(1);
-    background-color: #ff8766;
-    transform: translate(9px, 0px) scale(1.17); }
-  80% {
-    -webkit-filter:  hue-rotate(180deg);
-    background-color: #7d66ff;
-    transform: translate(-14px, -5px) scale(1.19); }
-  81% {
-    -webkit-filter:  hue-rotate(104.4deg);
-    background-color: #ffd466;
-    transform: translate(15px, 3px) scale(1.21); }
-  82% {
-    -webkit-filter:  hue-rotate(21.6deg);
-    background-color: #66a8ff;
-    transform: translate(-11px, -13px) scale(1.07); }
-  83% {
-    -webkit-filter:  hue-rotate(187.2deg);
-    background-color: #ff6673;
-    transform: translate(-10px, -5px) scale(1.1); }
-  85% {
-    -webkit-filter:  hue-rotate(327.6deg);
+    -webkit-filter:  hue-rotate(212.4deg);
     background-color: #85ff66;
-    transform: translate(-2px, 10px) scale(1.08); }
-  87% {
-    -webkit-filter:  saturate(9.19) hue-rotate(349.2deg);
-    background-color: #7aff66;
-    transform: translate(8px, -3px) scale(1.13); }
-  88% {
-    -webkit-filter:  hue-rotate(140.4deg);
-    background-color: #66ffb0;
-    transform: translate(-8px, -1px) scale(1.23); }
-  90% {
-    -webkit-filter:  hue-rotate(352.8deg);
-    background-color: #ff66de;
-    transform: translate(6px, 13px) scale(1.06); }
-  91% {
+    transform: translate(12px, 7px) scale(1.23); }
+  58% {
+    -webkit-filter:  saturate(4.42) hue-rotate(291.6deg);
+    background-color: #ff66c9;
+    transform: translate(8px, -9px) scale(1.09); }
+  61% {
+    -webkit-filter:  hue-rotate(338.4deg) contrast(9.46);
+    background-color: #6b66ff;
+    transform: translate(11px, -2px) scale(1.25); }
+  62% {
+    -webkit-filter:  hue-rotate(234deg);
+    background-color: #ff7366;
+    transform: translate(-6px, 1px) scale(1.25); }
+  63% {
+    -webkit-filter:  hue-rotate(21.6deg);
+    background-color: #ff6966;
+    transform: translate(14px, 6px) scale(1.07); }
+  64% {
+    -webkit-filter:  saturate(3.07) hue-rotate(187.2deg);
+    background-color: #ffa866;
+    transform: translate(8px, -12px) scale(1.24); }
+  65% {
+    -webkit-filter:  hue-rotate(3.6deg);
+    background-color: #b266ff;
+    transform: translate(12px, -9px) scale(1.23); }
+  66% {
     -webkit-filter:  hue-rotate(288deg);
-    background-color: #f266ff;
-    transform: translate(7px, 3px) scale(1.1); }
+    background-color: #ff66ff;
+    transform: translate(0px, 4px) scale(1.24); }
+  68% {
+    -webkit-filter:  saturate(6.76) hue-rotate(255.6deg);
+    background-color: #ff66a8;
+    transform: translate(1px, 5px) scale(1.07); }
+  69% {
+    -webkit-filter:  hue-rotate(154.8deg);
+    background-color: #66ff9e;
+    transform: translate(7px, 9px) scale(1.13); }
+  70% {
+    -webkit-filter:  hue-rotate(129.6deg);
+    background-color: #ff8566;
+    transform: translate(15px, -4px) scale(1.09); }
+  72% {
+    -webkit-filter:  hue-rotate(7.2deg);
+    background-color: #b3ff66;
+    transform: translate(12px, 12px) scale(1.13); }
+  74% {
+    -webkit-filter:  hue-rotate(262.8deg);
+    background-color: #fc66ff;
+    transform: translate(11px, 12px) scale(1.13); }
+  76% {
+    -webkit-filter:  hue-rotate(100.8deg);
+    background-color: #ff8766;
+    transform: translate(3px, 9px) scale(1.1); }
+  77% {
+    -webkit-filter:  hue-rotate(32.4deg);
+    background-color: #66ff9e;
+    transform: translate(0px, 5px) scale(1.09); }
+  78% {
+    -webkit-filter:  hue-rotate(280.8deg) contrast(2.08);
+    background-color: #66ebff;
+    transform: translate(9px, -3px) scale(1.09); }
+  80% {
+    -webkit-filter:  hue-rotate(21.6deg);
+    background-color: #e366ff;
+    transform: translate(0px, -12px) scale(1.22); }
+  81% {
+    -webkit-filter:  saturate(6.31) hue-rotate(21.6deg);
+    background-color: #66ff70;
+    transform: translate(2px, 5px) scale(1.11); }
+  82% {
+    -webkit-filter:  saturate(2.35) hue-rotate(169.2deg);
+    background-color: #66ffb5;
+    transform: translate(-3px, 4px) scale(1.18); }
+  83% {
+    -webkit-filter:  hue-rotate(352.8deg);
+    background-color: #66c2ff;
+    transform: translate(0px, -13px) scale(1.08); }
+  85% {
+    -webkit-filter:  saturate(1.18) hue-rotate(151.2deg);
+    background-color: #cc66ff;
+    transform: translate(-5px, -1px) scale(1.17); }
+  86% {
+    -webkit-filter:  hue-rotate(360deg) brightness(32%);
+    background-color: #668fff;
+    transform: translate(-6px, 7px) scale(1.2); }
+  87% {
+    -webkit-filter:  hue-rotate(93.6deg);
+    background-color: #ffc766;
+    transform: translate(2px, -6px) scale(1.24); }
+  88% {
+    -webkit-filter:  hue-rotate(82.8deg);
+    background-color: #666eff;
+    transform: translate(-1px, -7px) scale(1.17); }
+  91% {
+    -webkit-filter:  hue-rotate(93.6deg) contrast(4.51);
+    background-color: #66fff2;
+    transform: translate(14px, 1px) scale(1.14); }
   92% {
-    -webkit-filter:  hue-rotate(248.4deg);
-    background-color: #d6ff66;
-    transform: translate(-9px, -6px) scale(1.15); }
+    -webkit-filter:  saturate(6.4) hue-rotate(205.2deg);
+    background-color: #ff8766;
+    transform: translate(-1px, -2px) scale(1.12); }
+  93% {
+    -webkit-filter:  hue-rotate(230.4deg);
+    background-color: #faff66;
+    transform: translate(13px, 0px) scale(1.06); }
   94% {
-    -webkit-filter:  hue-rotate(349.2deg);
-    background-color: #ffab66;
-    transform: translate(15px, 6px) scale(1.06); }
+    -webkit-filter:  saturate(1.18) hue-rotate(183.6deg);
+    background-color: #66fffc;
+    transform: translate(12px, -11px) scale(1.13); }
   95% {
-    -webkit-filter:  hue-rotate(342deg);
-    background-color: #b0ff66;
-    transform: translate(-8px, -8px) scale(1.19); }
+    -webkit-filter:  hue-rotate(54deg);
+    background-color: #ff66c7;
+    transform: translate(12px, -12px) scale(1.1); }
   96% {
-    -webkit-filter:  hue-rotate(320.4deg);
-    background-color: #b8ff66;
-    transform: translate(0px, -2px) scale(1.11); }
+    -webkit-filter:  hue-rotate(183.6deg);
+    background-color: #66fcff;
+    transform: translate(-14px, -13px) scale(1.07); }
+  97% {
+    -webkit-filter:  hue-rotate(259.2deg);
+    background-color: #66ffc7;
+    transform: translate(3px, 5px) scale(1.24); }
   98% {
-    -webkit-filter:  hue-rotate(349.2deg);
-    background-color: #66dbff;
-    transform: translate(5px, -8px) scale(1.07); }
+    -webkit-filter:  saturate(7.12) hue-rotate(165.6deg);
+    background-color: #80ff66;
+    transform: translate(-3px, 10px) scale(1.13); }
   99% {
-    -webkit-filter:  hue-rotate(241.2deg) brightness(72%);
-    background-color: #66ffc9;
-    transform: translate(-6px, -13px) scale(1.13); } }
+    -webkit-filter:  hue-rotate(331.2deg);
+    background-color: #6673ff;
+    transform: translate(5px, -10px) scale(1.19); }
+  100% {
+    -webkit-filter:  hue-rotate(28.8deg);
+    background-color: #66ff73;
+    transform: translate(13px, -6px) scale(1.11); } }

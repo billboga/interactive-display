@@ -46,10 +46,14 @@
         $(function() {
             var display = $('#display');
 
+            var primaryInput = false;
             var secondaryInput = false;
 
             pinHub.client.inputPinStateChange = function(index, state) {
-                if (index === 1) {
+                if (index === 0) {
+                    primaryInput = state;
+                }
+                else if (index === 1) {
                     secondaryInput = state;
                 }
 
@@ -57,7 +61,7 @@
                     display.attr('src', null);
                     display.attr('src', display.data('src'));
                 }
-                else if (index === 0 && state === false && secondaryInput === false) {
+                else if ((index === 0 && state === false && secondaryInput === false) || (index === 1 && state === false && primaryInput === false)) {
                     display.attr('src', null);
 
                     for (var i = 0; i < 4; i++) {
