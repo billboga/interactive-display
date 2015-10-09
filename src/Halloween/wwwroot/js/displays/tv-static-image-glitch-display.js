@@ -70,6 +70,10 @@ $(function() {
                 imageAudioSource[0].currentTime = 0;
             }
 
+            clearTimeout(strobeTimeout);
+
+            pinHub.server.setOutputPinState(0, false);
+
             tvStatic.show();
         }
     };
