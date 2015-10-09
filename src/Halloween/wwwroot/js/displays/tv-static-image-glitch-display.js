@@ -56,10 +56,12 @@ $(function() {
                     clearTimeout(strobeTimeout);
                     pinHub.server.setOutputPinState(0, false);
 
+                    $('body').removeClass('animate');
                     tvStatic.show();
                 }, imageAudioSource[0].seekable.end(0) * 1000);
             }
 
+            $('body').addClass('animate');
             tvStatic.hide();
 
             strobe(100, true);
@@ -74,6 +76,7 @@ $(function() {
 
             pinHub.server.setOutputPinState(0, false);
 
+            $('body').removeClass('animate');
             tvStatic.show();
         }
     };

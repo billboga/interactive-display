@@ -43,7 +43,6 @@
 
 html { 
     background-color: black;
-    animation: spazz 7s steps(1) infinite;
 }
 
 body {
@@ -53,6 +52,10 @@ body {
     background-blend-mode: multiply;
     animation: inherit;
     animation-duration: 17s;
+}
+
+body.animate {
+    animation: spazz 7s steps(1) infinite;
 }
 
 @keyframes spazz {
