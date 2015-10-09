@@ -51,9 +51,15 @@ namespace Halloween.Models
         {
             var outputPin = outputPins[pinIndex];
 
-            connection[outputPin] = state;
+            if (connection != null)
+            {
+                connection[outputPin] = state;
+            }
 
-            OutputPinStateChange(pinIndex, state);
+            if (OutputPinStateChange != null)
+            {
+                OutputPinStateChange(pinIndex, state);
+            }
         }
     }
 }
