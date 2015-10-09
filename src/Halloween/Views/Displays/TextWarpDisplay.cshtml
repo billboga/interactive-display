@@ -3,6 +3,7 @@
 
 @{
     var audioSource = Model.AudioSource.Split(',').GetRandomElement();
+    var soundEffectAudioSource = Model.SoundEffectAudioSource.Split(',').GetRandomElement();
 }
 
 @section styles {
@@ -17,6 +18,10 @@
 @if (!string.IsNullOrEmpty(audioSource))
 {
     <audio src="@audioSource" autoplay></audio>
+}
+@if (!string.IsNullOrEmpty(soundEffectAudioSource))
+{
+    <audio id="sound-effect-audio-source" src="@soundEffectAudioSource"></audio>
 }
 @section scripts {
     <script>

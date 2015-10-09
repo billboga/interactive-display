@@ -14,246 +14,282 @@ body.animate {
 
 @keyframes spazz {
   0% {
-    -webkit-filter:  saturate(9.55) hue-rotate(212.4deg);
-    background-color: #9c66ff;
-    transform: translate(-3px, 15px) scale(1.06); }
-  1% {
-    -webkit-filter:  hue-rotate(334.8deg) contrast(5.86);
-    background-color: #66ffc2;
-    transform: translate(0px, 4px) scale(1.12); }
-  3% {
-    -webkit-filter:  hue-rotate(324deg);
-    background-color: #b266ff;
-    transform: translate(2px, 1px) scale(1.08); }
-  4% {
-    -webkit-filter:  hue-rotate(126deg);
-    background-color: #dbff66;
-    transform: translate(-2px, -14px) scale(1.23); }
-  6% {
-    -webkit-filter:  hue-rotate(43.2deg);
-    background-color: #66ffeb;
-    transform: translate(10px, -14px) scale(1.16); }
-  7% {
-    -webkit-filter:  saturate(4.69) hue-rotate(151.2deg) contrast(8.74);
-    background-color: #66ffad;
-    transform: translate(-14px, -11px) scale(1.17); }
-  8% {
-    -webkit-filter:  hue-rotate(356.4deg);
-    background-color: #8fff66;
-    transform: translate(4px, -4px) scale(1.2); }
-  11% {
-    -webkit-filter:  hue-rotate(50.4deg);
-    background-color: #66e5ff;
-    transform: translate(-13px, -12px) scale(1.17); }
-  13% {
-    -webkit-filter:  hue-rotate(86.4deg);
-    background-color: #66b2ff;
-    transform: translate(7px, -12px) scale(1.19); }
-  14% {
-    -webkit-filter:  hue-rotate(266.4deg);
-    background-color: #b3ff66;
-    transform: translate(-14px, -8px) scale(1.25); }
-  15% {
-    -webkit-filter:  hue-rotate(104.4deg);
-    background-color: #ffbf66;
-    transform: translate(-8px, -3px) scale(1.23); }
-  17% {
-    -webkit-filter:  saturate(3.07) hue-rotate(108deg);
-    background-color: #66cfff;
-    transform: translate(12px, 3px) scale(1.07); }
-  20% {
-    -webkit-filter:  hue-rotate(291.6deg);
-    background-color: #66e3ff;
-    transform: translate(13px, -6px) scale(1.24); }
-  21% {
-    -webkit-filter:  hue-rotate(72deg);
-    background-color: #9cff66;
-    transform: translate(2px, 12px) scale(1.24); }
-  25% {
-    -webkit-filter:  hue-rotate(61.2deg);
-    background-color: #ff6699;
-    transform: translate(-2px, 5px) scale(1.09); }
-  26% {
-    -webkit-filter:  saturate(2.08) hue-rotate(144deg);
-    background-color: #ff9c66;
-    transform: translate(-3px, -1px) scale(1.13); }
-  27% {
-    -webkit-filter:  hue-rotate(79.2deg);
-    background-color: #6694ff;
-    transform: translate(-4px, -2px) scale(1.21); }
-  31% {
-    -webkit-filter:  hue-rotate(158.4deg);
-    background-color: #bf66ff;
-    transform: translate(-10px, 1px) scale(1.08); }
-  32% {
-    -webkit-filter:  hue-rotate(90deg) contrast(1.99);
-    background-color: #ff66d1;
-    transform: translate(-8px, 2px) scale(1.19); }
-  33% {
-    -webkit-filter:  hue-rotate(176.4deg);
-    background-color: #ff66b5;
-    transform: translate(13px, -4px) scale(1.11); }
-  37% {
-    -webkit-filter:  saturate(8.38) hue-rotate(43.2deg);
-    background-color: #fff266;
-    transform: translate(4px, -8px) scale(1.17); }
-  39% {
-    -webkit-filter:  hue-rotate(126deg);
-    background-color: #ff6691;
-    transform: translate(12px, -12px) scale(1.19); }
-  43% {
-    -webkit-filter:  hue-rotate(252deg);
-    background-color: #a866ff;
-    transform: translate(-2px, 5px) scale(1.07); }
-  44% {
-    -webkit-filter:  saturate(3.07) hue-rotate(39.6deg);
-    background-color: #ff66fc;
-    transform: translate(5px, -12px) scale(1.08); }
-  45% {
-    -webkit-filter:  hue-rotate(205.2deg);
-    background-color: #7f66ff;
-    transform: translate(-9px, -10px) scale(1.18); }
-  47% {
-    -webkit-filter:  saturate(1.9) hue-rotate(61.2deg);
-    background-color: #cf66ff;
-    transform: translate(12px, 4px) scale(1.1); }
-  49% {
-    -webkit-filter:  hue-rotate(28.8deg) contrast(2.89);
-    background-color: #66ff85;
-    transform: translate(-13px, 15px) scale(1.07); }
-  50% {
-    -webkit-filter:  saturate(3.79) hue-rotate(72deg);
-    background-color: #f7ff66;
-    transform: translate(9px, -14px) scale(1.09); }
-  51% {
-    -webkit-filter:  hue-rotate(61.2deg);
-    background-color: #66ffd9;
-    transform: translate(-3px, 3px) scale(1.09); }
-  53% {
-    -webkit-filter:  hue-rotate(64.8deg) contrast(3.79);
-    background-color: #667dff;
-    transform: translate(-3px, -11px) scale(1.18); }
-  54% {
-    -webkit-filter:  saturate(5.14) hue-rotate(18deg);
-    background-color: #ff666e;
-    transform: translate(-2px, 14px) scale(1.17); }
-  55% {
-    -webkit-filter:  hue-rotate(342deg);
-    background-color: #666bff;
-    transform: translate(-6px, 5px) scale(1.13); }
-  56% {
-    -webkit-filter:  saturate(4.69) hue-rotate(356.4deg);
-    background-color: #66a3ff;
-    transform: translate(5px, 1px) scale(1.23); }
-  57% {
-    -webkit-filter: ;
-    background-color: #ffe866;
-    transform: translate(-1px, -9px) scale(1.13); }
-  59% {
-    -webkit-filter:  hue-rotate(144deg);
-    background-color: #669cff;
-    transform: translate(-3px, -8px) scale(1.2); }
-  60% {
-    -webkit-filter:  hue-rotate(219.6deg);
-    background-color: #ff667d;
-    transform: translate(6px, -9px) scale(1.14); }
-  61% {
-    -webkit-filter:  hue-rotate(320.4deg);
-    background-color: #b3ff66;
-    transform: translate(7px, 14px) scale(1.22); }
-  62% {
-    -webkit-filter: ;
-    background-color: #b3ff66;
-    transform: translate(-8px, -8px) scale(1.08); }
-  63% {
-    -webkit-filter:  saturate(4.24) hue-rotate(280.8deg) brightness(74%);
-    background-color: #ff66a6;
-    transform: translate(-5px, -7px) scale(1.07); }
-  65% {
-    -webkit-filter:  hue-rotate(327.6deg);
-    background-color: #d966ff;
-    transform: translate(7px, -7px) scale(1.07); }
-  67% {
-    -webkit-filter:  hue-rotate(97.2deg);
-    background-color: #ff66b8;
-    transform: translate(5px, -14px) scale(1.14); }
-  69% {
-    -webkit-filter:  hue-rotate(140.4deg);
-    background-color: #ff66cf;
-    transform: translate(-7px, 11px) scale(1.23); }
-  73% {
-    -webkit-filter:  saturate(2.44) hue-rotate(75.6deg) invert(1);
-    background-color: #b8ff66;
-    transform: translate(-12px, 7px) scale(1.16); }
-  75% {
-    -webkit-filter:  hue-rotate(180deg);
-    background-color: #ffcf66;
-    transform: translate(-11px, 2px) scale(1.12); }
-  76% {
-    -webkit-filter:  hue-rotate(46.8deg);
-    background-color: #66ff70;
-    transform: translate(-1px, 5px) scale(1.14); }
-  77% {
-    -webkit-filter:  saturate(6.76) hue-rotate(169.2deg);
-    background-color: #ffe366;
-    transform: translate(-9px, -3px) scale(1.15); }
-  78% {
-    -webkit-filter:  hue-rotate(32.4deg);
-    background-color: #ff6680;
-    transform: translate(10px, -9px) scale(1.13); }
-  79% {
-    -webkit-filter:  saturate(4.78) hue-rotate(169.2deg);
-    background-color: #66a1ff;
-    transform: translate(-3px, -9px) scale(1.13); }
-  81% {
-    -webkit-filter:  hue-rotate(324deg);
-    background-color: #dbff66;
-    transform: translate(6px, 12px) scale(1.2); }
-  82% {
-    -webkit-filter:  hue-rotate(122.4deg) contrast(8.92);
-    background-color: #ff6b66;
-    transform: translate(-1px, -2px) scale(1.19); }
-  84% {
-    -webkit-filter:  hue-rotate(86.4deg);
-    background-color: #d166ff;
-    transform: translate(6px, 0px) scale(1.16); }
-  89% {
-    -webkit-filter:  hue-rotate(241.2deg);
-    background-color: #6966ff;
-    transform: translate(10px, 11px) scale(1.1); }
-  90% {
-    -webkit-filter:  hue-rotate(230.4deg);
+    -webkit-filter:  hue-rotate(259.2deg);
     background-color: #66ff82;
-    transform: translate(11px, 4px) scale(1.16); }
-  92% {
-    -webkit-filter:  hue-rotate(342deg);
-    background-color: #fcff66;
-    transform: translate(3px, 10px) scale(1.07); }
-  93% {
-    -webkit-filter:  hue-rotate(14.4deg);
-    background-color: #ebff66;
-    transform: translate(11px, -11px) scale(1.15); }
-  94% {
-    -webkit-filter:  hue-rotate(93.6deg);
-    background-color: #ff6669;
-    transform: translate(5px, 7px) scale(1.22); }
-  95% {
-    -webkit-filter:  saturate(3.61) hue-rotate(158.4deg);
-    background-color: #669eff;
-    transform: translate(3px, -13px) scale(1.07); }
-  96% {
-    -webkit-filter:  hue-rotate(21.6deg);
-    background-color: #66ff99;
-    transform: translate(5px, -12px) scale(1.2); }
-  97% {
-    -webkit-filter:  hue-rotate(172.8deg);
+    transform: translate(15px, 15px) scale(1.17); }
+  2% {
+    -webkit-filter:  hue-rotate(108deg);
+    background-color: #bd66ff;
+    transform: translate(9px, -14px) scale(1.1); }
+  3% {
+    -webkit-filter:  hue-rotate(190.8deg);
+    background-color: #ff66b5;
+    transform: translate(4px, -3px) scale(1.19); }
+  4% {
+    -webkit-filter:  hue-rotate(169.2deg);
+    background-color: #66f2ff;
+    transform: translate(-8px, -1px) scale(1.2); }
+  6% {
+    -webkit-filter:  hue-rotate(154.8deg);
+    background-color: #66b0ff;
+    transform: translate(-3px, 7px) scale(1.08); }
+  7% {
+    -webkit-filter:  saturate(1.9) hue-rotate(21.6deg);
+    background-color: #66ff82;
+    transform: translate(-6px, -5px) scale(1.2); }
+  9% {
+    -webkit-filter:  hue-rotate(259.2deg) contrast(4.33);
+    background-color: #66ffe3;
+    transform: translate(3px, -6px) scale(1.06); }
+  10% {
+    -webkit-filter:  hue-rotate(140.4deg);
+    background-color: #f566ff;
+    transform: translate(4px, 10px) scale(1.24); }
+  11% {
+    -webkit-filter:  hue-rotate(118.8deg);
+    background-color: #66e5ff;
+    transform: translate(-5px, 14px) scale(1.18); }
+  12% {
+    -webkit-filter:  hue-rotate(165.6deg);
+    background-color: #66ff8f;
+    transform: translate(-8px, 12px) scale(1.19); }
+  13% {
+    -webkit-filter:  hue-rotate(118.8deg) contrast(7.48);
+    background-color: #a3ff66;
+    transform: translate(-6px, 14px) scale(1.09); }
+  14% {
+    -webkit-filter:  saturate(3.52) hue-rotate(288deg);
+    background-color: #66ffa8;
+    transform: translate(12px, -6px) scale(1.2); }
+  15% {
+    -webkit-filter:  saturate(9.37) hue-rotate(158.4deg);
+    background-color: #66fff0;
+    transform: translate(3px, 9px) scale(1.14); }
+  17% {
+    -webkit-filter:  hue-rotate(187.2deg) contrast(4.6);
+    background-color: #66ff70;
+    transform: translate(-2px, 11px) scale(1.15); }
+  18% {
+    -webkit-filter:  hue-rotate(349.2deg);
+    background-color: #ffbd66;
+    transform: translate(8px, -11px) scale(1.08); }
+  20% {
+    -webkit-filter:  hue-rotate(162deg);
+    background-color: #66bfff;
+    transform: translate(8px, 9px) scale(1.13); }
+  21% {
+    -webkit-filter:  hue-rotate(244.8deg);
+    background-color: #66ff96;
+    transform: translate(2px, -7px) scale(1.11); }
+  23% {
+    -webkit-filter:  hue-rotate(57.6deg);
+    background-color: #9c66ff;
+    transform: translate(-13px, 6px) scale(1.24); }
+  24% {
+    -webkit-filter:  saturate(2.62) hue-rotate(140.4deg);
+    background-color: #6966ff;
+    transform: translate(-9px, 9px) scale(1.16); }
+  25% {
+    -webkit-filter:  hue-rotate(133.2deg);
+    background-color: #66ffe5;
+    transform: translate(-14px, 8px) scale(1.22); }
+  26% {
+    -webkit-filter:  hue-rotate(154.8deg);
+    background-color: #66ff75;
+    transform: translate(3px, 7px) scale(1.14); }
+  27% {
+    -webkit-filter:  hue-rotate(136.8deg);
+    background-color: #ff66fa;
+    transform: translate(6px, -11px) scale(1.16); }
+  28% {
+    -webkit-filter:  hue-rotate(298.8deg);
+    background-color: #6680ff;
+    transform: translate(4px, -10px) scale(1.22); }
+  30% {
+    -webkit-filter:  saturate(7.21);
+    background-color: #66ffc7;
+    transform: translate(6px, 7px) scale(1.08); }
+  31% {
+    -webkit-filter:  hue-rotate(273.6deg);
+    background-color: #66ffa3;
+    transform: translate(-14px, -11px) scale(1.17); }
+  32% {
+    -webkit-filter:  hue-rotate(219.6deg);
+    background-color: #66ebff;
+    transform: translate(6px, 10px) scale(1.15); }
+  34% {
+    -webkit-filter:  hue-rotate(10.8deg);
+    background-color: #baff66;
+    transform: translate(-8px, -8px) scale(1.18); }
+  35% {
+    -webkit-filter:  hue-rotate(68.4deg) brightness(60.5%);
+    background-color: #a8ff66;
+    transform: translate(13px, -11px) scale(1.1); }
+  36% {
+    -webkit-filter:  hue-rotate(32.4deg);
     background-color: #ffc266;
-    transform: translate(9px, -7px) scale(1.06); }
+    transform: translate(3px, -3px) scale(1.12); }
+  37% {
+    -webkit-filter:  saturate(6.76) hue-rotate(342deg);
+    background-color: #ff66ad;
+    transform: translate(-12px, -10px) scale(1.13); }
+  39% {
+    -webkit-filter:  hue-rotate(165.6deg);
+    background-color: #70ff66;
+    transform: translate(8px, -4px) scale(1.18); }
+  40% {
+    -webkit-filter:  hue-rotate(50.4deg);
+    background-color: #6e66ff;
+    transform: translate(5px, 1px) scale(1.14); }
+  41% {
+    -webkit-filter:  hue-rotate(180deg) invert(1);
+    background-color: #ffc266;
+    transform: translate(3px, 15px) scale(1.06); }
+  42% {
+    -webkit-filter:  hue-rotate(43.2deg);
+    background-color: #de66ff;
+    transform: translate(-2px, 12px) scale(1.24); }
+  43% {
+    -webkit-filter:  hue-rotate(126deg);
+    background-color: #6b66ff;
+    transform: translate(-3px, 7px) scale(1.13); }
+  44% {
+    -webkit-filter:  hue-rotate(266.4deg);
+    background-color: #66c2ff;
+    transform: translate(-7px, -6px) scale(1.15); }
+  45% {
+    -webkit-filter:  hue-rotate(64.8deg);
+    background-color: #ffba66;
+    transform: translate(2px, -9px) scale(1.19); }
+  48% {
+    -webkit-filter:  hue-rotate(216deg);
+    background-color: #ff66a8;
+    transform: translate(-1px, 8px) scale(1.08); }
+  49% {
+    -webkit-filter:  hue-rotate(10.8deg);
+    background-color: #6687ff;
+    transform: translate(12px, -9px) scale(1.07); }
+  50% {
+    -webkit-filter:  hue-rotate(28.8deg);
+    background-color: #ff66de;
+    transform: translate(-9px, 3px) scale(1.17); }
+  53% {
+    -webkit-filter:  hue-rotate(216deg);
+    background-color: #6691ff;
+    transform: translate(7px, -12px) scale(1.08); }
+  54% {
+    -webkit-filter:  hue-rotate(356.4deg);
+    background-color: #66ffde;
+    transform: translate(1px, -6px) scale(1.09); }
+  57% {
+    -webkit-filter:  hue-rotate(288deg);
+    background-color: #de66ff;
+    transform: translate(11px, -12px) scale(1.17); }
+  62% {
+    -webkit-filter:  hue-rotate(169.2deg);
+    background-color: #70ff66;
+    transform: translate(-6px, -9px) scale(1.06); }
+  63% {
+    -webkit-filter:  hue-rotate(223.2deg);
+    background-color: #f0ff66;
+    transform: translate(0px, 14px) scale(1.11); }
+  65% {
+    -webkit-filter:  hue-rotate(226.8deg) contrast(3.88);
+    background-color: #6699ff;
+    transform: translate(-7px, 12px) scale(1.14); }
+  66% {
+    -webkit-filter:  hue-rotate(216deg);
+    background-color: #ff7f66;
+    transform: translate(-7px, -7px) scale(1.19); }
+  68% {
+    -webkit-filter:  hue-rotate(201.6deg) invert(1);
+    background-color: #bdff66;
+    transform: translate(7px, 12px) scale(1.17); }
+  69% {
+    -webkit-filter:  hue-rotate(158.4deg) contrast(6.76);
+    background-color: #66ffcc;
+    transform: translate(-12px, 7px) scale(1.16); }
+  71% {
+    -webkit-filter:  hue-rotate(345.6deg);
+    background-color: #66ff96;
+    transform: translate(-6px, 3px) scale(1.18); }
+  73% {
+    -webkit-filter:  hue-rotate(345.6deg);
+    background-color: #66ffd4;
+    transform: translate(8px, -3px) scale(1.19); }
+  74% {
+    -webkit-filter:  saturate(2.71) hue-rotate(136.8deg);
+    background-color: #66ffb8;
+    transform: translate(15px, -2px) scale(1.09); }
+  75% {
+    -webkit-filter:  hue-rotate(259.2deg);
+    background-color: #ba66ff;
+    transform: translate(-10px, 8px) scale(1.07); }
+  77% {
+    -webkit-filter:  hue-rotate(57.6deg);
+    background-color: #ff66a3;
+    transform: translate(-11px, 6px) scale(1.11); }
+  78% {
+    -webkit-filter:  hue-rotate(50.4deg) invert(1);
+    background-color: #ff8766;
+    transform: translate(9px, 0px) scale(1.17); }
+  80% {
+    -webkit-filter:  hue-rotate(180deg);
+    background-color: #7d66ff;
+    transform: translate(-14px, -5px) scale(1.19); }
+  81% {
+    -webkit-filter:  hue-rotate(104.4deg);
+    background-color: #ffd466;
+    transform: translate(15px, 3px) scale(1.21); }
+  82% {
+    -webkit-filter:  hue-rotate(21.6deg);
+    background-color: #66a8ff;
+    transform: translate(-11px, -13px) scale(1.07); }
+  83% {
+    -webkit-filter:  hue-rotate(187.2deg);
+    background-color: #ff6673;
+    transform: translate(-10px, -5px) scale(1.1); }
+  85% {
+    -webkit-filter:  hue-rotate(327.6deg);
+    background-color: #85ff66;
+    transform: translate(-2px, 10px) scale(1.08); }
+  87% {
+    -webkit-filter:  saturate(9.19) hue-rotate(349.2deg);
+    background-color: #7aff66;
+    transform: translate(8px, -3px) scale(1.13); }
+  88% {
+    -webkit-filter:  hue-rotate(140.4deg);
+    background-color: #66ffb0;
+    transform: translate(-8px, -1px) scale(1.23); }
+  90% {
+    -webkit-filter:  hue-rotate(352.8deg);
+    background-color: #ff66de;
+    transform: translate(6px, 13px) scale(1.06); }
+  91% {
+    -webkit-filter:  hue-rotate(288deg);
+    background-color: #f266ff;
+    transform: translate(7px, 3px) scale(1.1); }
+  92% {
+    -webkit-filter:  hue-rotate(248.4deg);
+    background-color: #d6ff66;
+    transform: translate(-9px, -6px) scale(1.15); }
+  94% {
+    -webkit-filter:  hue-rotate(349.2deg);
+    background-color: #ffab66;
+    transform: translate(15px, 6px) scale(1.06); }
+  95% {
+    -webkit-filter:  hue-rotate(342deg);
+    background-color: #b0ff66;
+    transform: translate(-8px, -8px) scale(1.19); }
+  96% {
+    -webkit-filter:  hue-rotate(320.4deg);
+    background-color: #b8ff66;
+    transform: translate(0px, -2px) scale(1.11); }
   98% {
-    -webkit-filter:  hue-rotate(79.2deg);
-    background-color: #ff6694;
-    transform: translate(6px, 11px) scale(1.19); }
-  100% {
-    -webkit-filter:  saturate(6.13) hue-rotate(248.4deg) contrast(8.47);
-    background-color: #d666ff;
-    transform: translate(-6px, 10px) scale(1.07); } }
+    -webkit-filter:  hue-rotate(349.2deg);
+    background-color: #66dbff;
+    transform: translate(5px, -8px) scale(1.07); }
+  99% {
+    -webkit-filter:  hue-rotate(241.2deg) brightness(72%);
+    background-color: #66ffc9;
+    transform: translate(-6px, -13px) scale(1.13); } }

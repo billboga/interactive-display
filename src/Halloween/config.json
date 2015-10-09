@@ -5,11 +5,13 @@
         "displays": {
             "TextGlitchDisplay": {
                 "text": "Halloween",
-                "audioSource": ""
+                "audioSource": "",
+                "soundEffectAudioSource": ""
             },
             "TextWarpDisplay": {
                 "text": "Halloween",
-                "audioSource": ""
+                "audioSource": "",
+                "soundEffectAudioSource": ""
             },
             "TVStaticImageGlitchDisplay": {
                 "imageAudioSource": "",
