@@ -5,7 +5,7 @@ using Newtonsoft.Json.Serialization;
 
 namespace Halloween.ViewModels.Displays
 {
-    public class BaseDisplay : IDisplay
+    public abstract class BaseDisplay : IDisplay
     {
         private readonly JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings()
         {
