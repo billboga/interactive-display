@@ -7,12 +7,18 @@ namespace Halloween.ViewModels.Displays
 {
     public abstract class BaseDisplay : IDisplay
     {
+        public BaseDisplay()
+        {
+            IsEnabled = true;
+        }
+
         private readonly JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings()
         {
             ContractResolver = new CamelCasePropertyNamesContractResolver()
         };
 
         public string AudioSource { get; set; }
+        public bool IsEnabled { get; set; }
 
         public IHtmlContent ToJson()
         {
