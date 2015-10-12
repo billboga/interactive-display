@@ -17,6 +17,9 @@
                 "imageAudioSource": "",
                 "imageGlitchUri": "",
                 "audioSource": ""
+            },
+            "ScaryEyesDisplay": {
+                "audioSource": ""
             }
         },
         "portraitMode": "false"

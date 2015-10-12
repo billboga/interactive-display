@@ -1,0 +1,23 @@
+﻿@using Halloween.Extensions
+@model Halloween.ViewModels.Displays.ScaryEyesDisplay
+
+@{
+    var audioSource = Model.AudioSource.Split(',').GetRandomElement();
+}
+
+@section styles {
+    <link href="~/css/displays/scary-eyes-display.css" rel="stylesheet" type="text/css" />
+}
+
+<div class="eye"></div>
+<div class="eye"></div>
+@if (!string.IsNullOrEmpty(audioSource))
+{
+    <audio src="@audioSource" autoplay></audio>
+}
+@section scripts {
+    <script>
+    var model = $.parseJSON('@Model.ToJson()');
+    </script>
+    <script src="~/js/displays/scary-eyes-display.js"></script>
+}
