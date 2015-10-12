@@ -28,7 +28,7 @@ function getRender(pdx, pdy, pcolors) {
 };
 
 // one to go, please
-var render = getRender(1, 2, colors);
+var render = getRender(8, 4, colors);
 
 // define switcher
 function doSwitch(e) {
@@ -46,22 +46,34 @@ document.body.addEventListener('keydown', doSwitch);
 $(function() {
     var tvStatic = $('#cvs');
     var imageAudioSource = $('#image-audio-source');
+
+    if (imageAudioSource.length > 0) {
+        imageAudioSource[0].pause();
+    }
+
     var strobeTimeout = null;
 
     pinHub.client.inputPinStateChange = function(index, state) {
         if (index === 1 && state === true) {
             if (imageAudioSource.length > 0) {
+                imageAudioSource.currentTime = imageAudioSource[0].seekable.start(0);
                 imageAudioSource[0].play();
                 setTimeout(function() {
                     clearTimeout(strobeTimeout);
                     pinHub.server.setOutputPinState(0, false);
 
                     $('body').removeClass('animate');
+
+                    play = false;
+                    doSwitch();
                     tvStatic.show();
                 }, imageAudioSource[0].seekable.end(0) * 1000);
             }
 
             $('body').addClass('animate');
+
+            play = true;
+            doSwitch();
             tvStatic.hide();
 
             strobe(100, true);
@@ -69,7 +81,7 @@ $(function() {
         else if (index === 1 && state === false) {
             if (imageAudioSource.length > 0) {
                 imageAudioSource[0].pause();
-                imageAudioSource[0].currentTime = 0;
+                imageAudioSource[0].currentTime = imageAudioSource[0].seekable.start(0);;
             }
 
             clearTimeout(strobeTimeout);
@@ -77,6 +89,9 @@ $(function() {
             pinHub.server.setOutputPinState(0, false);
 
             $('body').removeClass('animate');
+
+            play = false;
+            doSwitch();
             tvStatic.show();
         }
     };

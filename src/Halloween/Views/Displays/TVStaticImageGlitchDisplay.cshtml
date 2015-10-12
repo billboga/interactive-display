@@ -23,11 +23,11 @@
 }
 @if (!string.IsNullOrEmpty(imageAudioSource))
 {
-    <audio id="image-audio-source" src="@imageAudioSource"></audio>
+    <audio id="image-audio-source" src="@imageAudioSource" autoplay></audio>
 }
 @section scripts {
     <script>
-    var model = $.parseJSON('@Model.ToJson()');
+        var model = $.parseJSON('@Model.ToJson()');
     </script>
     <script src="~/js/displays/tv-static-image-glitch-display.js"></script>
 }

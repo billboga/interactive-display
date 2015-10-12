@@ -21,11 +21,11 @@
 }
 @if (!string.IsNullOrEmpty(soundEffectAudioSource))
 {
-    <audio id="sound-effect-audio-source" src="@soundEffectAudioSource"></audio>
+    <audio id="sound-effect-audio-source" src="@soundEffectAudioSource" ></audio>
 }
 @section scripts {
     <script>
-    var model = $.parseJSON('@Model.ToJson()');
+        var model = $.parseJSON('@Model.ToJson()');
     </script>
     <script src="~/js/displays/text-warp-display.js"></script>
 }

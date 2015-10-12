@@ -156,7 +156,12 @@
 })();
 
 $(function() {
-    var soundEffectcAudioSource = $('#sound-effect-audio-source');
+    var soundEffectAudioSource = $('#sound-effect-audio-source');
+
+    if (soundEffectAudioSource.length > 0) {
+        soundEffectAudioSource[0].pause();
+    }
+
     var strobeTimeout = null;
 
     $.connection.hub.start().done(function() {
@@ -169,21 +174,22 @@ $(function() {
 
     pinHub.client.inputPinStateChange = function(index, state) {
         if (index === 1 && state === true) {
-            if (soundEffectcAudioSource.length > 0) {
-                soundEffectcAudioSource[0].play();
+            if (soundEffectAudioSource.length > 0) {
+                soundEffectAudioSource.currentTime = soundEffectAudioSource[0].seekable.start(0);
+                soundEffectAudioSource[0].play();
                 setTimeout(function() {
                     clearTimeout(strobeTimeout);
                     pinHub.server.setOutputPinState(0, false);
 
-                }, soundEffectcAudioSource[0].seekable.end(0) * 1000);
+                }, soundEffectAudioSource[0].seekable.end(0) * 1000);
             }
 
             strobe(500, true);
         }
         else if (index === 1 && state === false) {
-            if (soundEffectcAudioSource.length > 0) {
-                soundEffectcAudioSource[0].pause();
-                soundEffectcAudioSource[0].currentTime = 0;
+            if (soundEffectAudioSource.length > 0) {
+                soundEffectAudioSource[0].pause();
+                soundEffectAudioSource[0].currentTime = 0;
             }
 
             clearTimeout(strobeTimeout);
